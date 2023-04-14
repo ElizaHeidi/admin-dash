@@ -1,0 +1,137 @@
+@import 'normalize.css';
+
+:root {
+    --sidebar: rgb(25 147 212);
+    --main: rgb(226 232 241);
+    --nav: white;
+    --font1: #172554;
+    --accent1: goldenrod;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sidebar {
+    grid-row: 1/7;
+    background-color: var(--sidebar);
+    color: aliceblue;
+}
+
+.sidebar h3 {
+    color: aliceblue;
+}
+
+.nav {
+   /* width: 100vw; */
+   background-color: var(--nav);
+   font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "nav-top nav-user"
+    "nav-bottom"
+}
+
+.nav-top {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0;
+}
+
+.nav-user {
+    grid-column: 2/3;
+    grid-column: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0;
+}
+
+.nav-user > img, i, .username {
+    margin: 4px;
+}
+
+input[type=search] {
+    height: 1.25rem;
+    width: 26.25rem;
+}
+
+img.cropped {
+    object-fit: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.nav-bottom {
+    grid-column: 2/5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btm-left {
+    display: flex;
+    align-items: center;
+}
+
+.hi-there {
+    display: flex;
+    flex-direction: column;
+}
+
+.hi-there > p {
+    margin: 0px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    align-items: ;
+}
+
+.btns > button {
+    margin-right: 20px;
+    height: 22px;
+}
+
+.main {
+    grid-column: 2;
+    background-color: var(--main);
+}
+
+.article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+ul {
+    list-style: none;
+}
+
+.cards {
+    min-width: 260px;
+    background-color: var(--nav);
+    border-left: 7px solid var(--accent1);
+    border-radius: 5px;
+    margin: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1px 1fr;
+}
+
+.cards > p {
+    padding: 25px;
+    padding-left: 0;
+    margin: 1rem;
+}
+
+.cards > h5 {
+margin: 1rem;
+}
