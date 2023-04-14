@@ -1,12 +1,13 @@
 @import 'normalize.css';
 
 :root {
-    --sidebar: rgb(25 147 212);
-    --main: rgb(226 232 241);
+    --sidebar: #F7A38A;
+    --main: #FFE0E0;
     --nav: white;
-    --font1-color: #172554;
+    --font1-color: #694a38;
     --bold-font-family: 'Roboto';
-    --accent1: goldenrod;
+    --accent1: #faa6b6;
+    --bkg: #fff3eb;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 .logo {
@@ -113,6 +115,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
  /* Top left */
@@ -135,6 +138,7 @@ ul {
     background-color: var(--main);
     border: none;
     border-radius: 50px;
+    background-color: var(--main) 
 }
 
 img.cropped {
@@ -212,8 +216,8 @@ img.cropped {
     padding: ;
     border-radius: 50px;
     border: none;
-    color: aliceblue;
-    background-color: var(--sidebar);
+    color: var(--font1-color);
+    background-color: var(--accent1);
     font-family: var(--bold-font-family);
     font-weight: 500;
 }
@@ -274,6 +278,8 @@ img.cropped {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 48px 1fr; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: var(--bkg);
 }
 
 .card > h5, p {
@@ -331,6 +337,7 @@ img.cropped {
     margin-bottom: 9px;
     margin-left: 18.5px;
     margin-top: 3.9px;
+    
 }
 
 .maintenance > div:nth-child(1) {
@@ -349,6 +356,8 @@ img.cropped {
     max-height: 200px;
     display: grid;
     grid-template-rows: repeat(3, 76px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: var(--bkg);
 }
 
 .maintenance > div > p {
@@ -390,7 +399,7 @@ img.cropped {
 }
 
 .trending > div {
-    background-color: aliceblue;
+    background-color: var(--bkg);
     padding: 12px;
     padding-left: 11px;
     margin-right: 24px;
@@ -404,6 +413,7 @@ img.cropped {
     column-gap: 15px;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     }
 
 .trending > div > p {
