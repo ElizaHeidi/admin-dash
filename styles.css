@@ -224,6 +224,11 @@ img.cropped {
 
 /* Cards */
 
+.main-container {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
 .main {
     height: 100vh;
     background-color: var(--main);
@@ -236,13 +241,23 @@ img.cropped {
         "cards gutter";
 }
 
-.main-wrapper {
+.info {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: 76px 1fr;
+    align-items: start;
+}
 
- 
+.info > h3 {
+    grid-row: 1;
+    align-self: end;
+    margin-top: 16px;
+    margin-left: 12px;
+    font-family: var(--bold-font-family);
 }
 
 .cards {
-    margin-top: 48px;
+    margin-top: 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -255,7 +270,7 @@ img.cropped {
     border-left: 7px solid var(--accent1);
     border-radius: 5px;
     margin: 12px;
-    height: 165px;
+    height: 164px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 48px 1fr; 
@@ -290,8 +305,7 @@ img.cropped {
 /* Gutter */
 
 .gutter {
-    grid-row: -2/-1;
-    grid-column: -2/-1;
+    grid-column: ;
     width: calc(100% - 8px);
     display: grid;
     grid-template-columns: 1fr;
@@ -299,7 +313,7 @@ img.cropped {
     justify-items: start;
     align-items: center;
     gap: 14px;
-    margin-top: 33px;
+    margin-top: 56px;
 }
 
 .gutter > div > h4 {
@@ -316,6 +330,7 @@ img.cropped {
     margin-right: 8px;
     margin-bottom: 9px;
     margin-left: 18.5px;
+    margin-top: 3.9px;
 }
 
 .maintenance > div:nth-child(1) {
